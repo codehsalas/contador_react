@@ -1,15 +1,15 @@
-//import react into the bundle
 import React from "react";
 import ReactDOM from "react-dom";
+import "../styles/estilos.css";
+import "bootstrap/dist/css/bootstrap.css";
+import Contador from "./component/Contador.jsx";
 
-//include bootstrap npm library into the bundle
-import "bootstrap";
+let counter = 0;
 
-//include your index.scss file into the bundle
-import "../styles/index.scss";
-
-//import your own components
-import { Home } from "./component/home.js";
-
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+setInterval(function() {
+	ReactDOM.render(
+		<Contador seconds={counter} />,
+		document.getElementById("app")
+	);
+	counter += 1;
+}, 1000);

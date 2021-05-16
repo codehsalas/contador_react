@@ -7,12 +7,12 @@ import rigoImage from "../../img/rigo-baby.jpg";
 export function Home() {
 	return (
 		<div className="text-center mt-5">
-			<h1>Hello Rigo!</h1>
+			<h1>Rigo Contador</h1>
 			<p>
 				<img src={rigoImage} />
 			</p>
 			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working
+				Bienvenido al Contador
 			</a>
 			<p>
 				Made by{" "}
